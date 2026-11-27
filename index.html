@@ -3,91 +3,232 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="page_title">Mijn Portfolio</title>
+  <title data-i18n="page_title">Portfolio | Daphne Anandakumar | Junior Developer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="hero">
-    <div class="container">
+  <!-- Navigatiebalk -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active" data-target="home" data-i18n="nav_home">Home</a></li>
+        <li><a href="#over-mij" class="nav-link" data-target="over-mij" data-i18n="nav_about">Over mij</a></li>
+        <li><a href="#leren" class="nav-link" data-target="leren" data-i18n="nav_learning">Aan het leren</a></li>
+        <li><a href="#projecten" class="nav-link" data-target="projecten" data-i18n="nav_projects">Projecten</a></li>
+        <li><a href="#contact" class="nav-link" data-target="contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
       <button id="lang-toggle" type="button" class="lang-btn">EN</button>
-      <h1 data-i18n="hero_title">Portfolio | Daphne Anandakumar | Junior Developer</h1>
-      <p class="subtitle" data-i18n="hero_subtitle">Startend developer met focus op Python, HTML en CSS.</p>
-      <a href="#projecten" class="btn" data-i18n="hero_cta">Bekijk mijn projecten</a>
+    </div>
+  </nav>
+
+  <!-- Hoofdpagina (Header / Hero) -->
+  <header id="home" class="page-view hero active-view">
+    <div class="container hero-wrapper">
+      <div class="hero-content">
+        <img
+          src="images/profielfoto.jpg"
+          alt="Profielfoto van Daphne Anandakumar"
+          class="profile-pic"
+        />
+        <div class="hero-text">
+          <h1 data-i18n="hero_title1">Portfolio</h1>
+          <h1 data-i18n="hero_title2">Daphne Anandakumar</h1>
+          <h1 data-i18n="hero_title3">Junior Developer</h1>
+          <p class="subtitle" data-i18n="hero_subtitle">
+            Startend developer met focus op Python, HTML en CSS.
+          </p>
+          <a href="#projecten" class="btn-primary nav-trigger" data-target="projecten" data-i18n="hero_cta">
+            Bekijk mijn projecten &rarr;
+          </a>
+        </div>
+      </div>
     </div>
   </header>
 
+  <!-- Subpagina's -->
   <main class="container">
-    
-    <!-- Over mij & Vaardigheden -->
-    <section id="over-mij" class="section">
+
+    <!-- Subpagina 1: Over mij & Vaardigheden -->
+    <section id="over-mij" class="page-view card-section">
       <h2 data-i18n="about_title">Over mij</h2>
       <p data-i18n="about_text">
-        Ik ben een leergierige programmeur met een basis in Python, HTML en CSS. 
+        Ik ben een leergierige programmeur met een basis in Python, HTML en CSS.
         Ik bouw graag overzichtelijke webpagina's en handige scripts die taken automatiseren.
-        Het is mijn ambitie om mijzelf te ontwikkelen tot Full-Stack Developer. 
-        Ik ben in 2026 begonnen aan mijn reis naar de IT wereld. 
-        Ik ben ter kennismaking gestart met het maken van de online cursus van FreeCodeCamp, 
-        waarin ik 'Basic HTML' en 'Semssntic HTML' heb afgerond. 
-        Daarnaast heb ik het omscholingstraject 'Python developer' van ITMG gevolgd en afgerond. 
-        Nu ben ik bezig met zelfstudie en het bouwen van mijn portfolio. 
+        Het is mijn ambitie om mijzelf te ontwikkelen tot Full-Stack Developer.
+        Ik ben in 2026 begonnen aan mijn reis naar de IT wereld.
+        Ik ben ter kennismaking gestart met het maken van de online cursus van FreeCodeCamp,
+        waarin ik 'Basic HTML' en 'Semantic HTML' heb afgerond.
+        Daarnaast heb ik het omscholingstraject 'Python developer' van ITMG gevolgd en afgerond.
+        Nu ben ik bezig met zelfstudie en het bouwen van mijn portfolio.
         Ik ben opzoek naar volgend traject/traineeship/bootcamp om vervolgens te kunnen starten als Junior Developer.
       </p>
 
       <h3 data-i18n="skills_title">Vaardigheden</h3>
       <ul class="skills">
-        <li data-i18n="skill_python">Python</li>
-        <li data-i18n="skill_html">HTML5</li>
-        <li data-i18n="skill_css">CSS3</li>
-        <li data-i18n="skill_git">Git &amp; GitHub</li>
+        <li>
+          <i class="devicon-python-plain colored" aria-hidden="true"></i>
+          <span data-i18n="skill_python">Python</span>
+        </li>
+        <li>
+          <i class="devicon-html5-plain colored" aria-hidden="true"></i>
+          <span data-i18n="skill_html">HTML5</span>
+        </li>
+        <li>
+          <i class="devicon-css3-plain colored" aria-hidden="true"></i>
+          <span data-i18n="skill_css">CSS3</span>
+        </li>
+        <li>
+          <i class="devicon-git-plain colored" aria-hidden="true"></i>
+          <i class="devicon-github-original" aria-hidden="true"></i>
+          <span data-i18n="skill_git">Git &amp; GitHub</span>
+        </li>
       </ul>
     </section>
 
-    <!-- Projecten -->
-    <section id="projecten" class="section">
+    <!-- Subpagina 2: Wat ik nu aan het leren ben (Leer-roadmap) -->
+    <section id="leren" class="page-view card-section learning-box">
+      <div class="roadmap-header">
+        <div>
+          <h2 data-i18n="learning_title">Mijn Leertraject &amp; Roadmap</h2>
+          <p data-i18n="learning_text">
+            Mijn reis naar Junior Full-Stack Developer — van de eerste regels HTML tot mijn eigen portfolio.
+          </p>
+        </div>
+        <span class="roadmap-year-badge" data-i18n="roadmap_period">2026 &mdash; Heden</span>
+      </div>
+
+      <div class="timeline">
+        <!-- Stap 1: Afgerond -->
+        <div class="timeline-item completed">
+          <div class="timeline-marker">✓</div>
+          <div class="timeline-content">
+            <div class="timeline-top">
+              <span class="timeline-org">FreeCodeCamp</span>
+              <span class="status-pill pill-done" data-i18n="status_done">Afgerond</span>
+            </div>
+            <h3 data-i18n="road_step1_title">Basis HTML &amp; Semantic HTML</h3>
+            <p data-i18n="road_step1_desc">
+              Kennismaking met webdevelopment en het opbouwen van gestructureerde, toegankelijke webpagina's.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stap 2: Afgerond -->
+        <div class="timeline-item completed">
+          <div class="timeline-marker">✓</div>
+          <div class="timeline-content">
+            <div class="timeline-top">
+              <span class="timeline-org">ITMG Omscholingstraject</span>
+              <span class="status-pill pill-done" data-i18n="status_done">Afgerond</span>
+            </div>
+            <h3 data-i18n="road_step2_title">Python Developer</h3>
+            <p data-i18n="road_step2_desc">
+              Programmeren in Python, werken met datastructuren en het schrijven van handige scripts voor automatisering.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stap 3: Nu mee bezig -->
+        <div class="timeline-item current">
+          <div class="timeline-marker">●</div>
+          <div class="timeline-content">
+            <div class="timeline-top">
+              <span class="timeline-org" data-i18n="road_step3_org">Zelfstudie &amp; Portfolio</span>
+              <span class="status-pill pill-current" data-i18n="status_current">Nu mee bezig</span>
+            </div>
+            <h3 data-i18n="road_step3_title">Portfolio Website, CSS3 &amp; JavaScript</h3>
+            <p data-i18n="road_step3_desc">
+              Bouwen en vormgeven van deze tweetalige portfoliopagina, versiebeheer met Git &amp; GitHub en live hosting via GitHub Pages.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stap 4: Volgende stap / Doel -->
+        <div class="timeline-item goal">
+          <div class="timeline-marker">★</div>
+          <div class="timeline-content">
+            <div class="timeline-top">
+              <span class="timeline-org" data-i18n="road_step4_org">Volgende Stap</span>
+              <span class="status-pill pill-goal" data-i18n="status_goal">Doel</span>
+            </div>
+            <h3 data-i18n="road_step4_title">Traineeship / Bootcamp &amp; Start als Junior Developer</h3>
+            <p data-i18n="road_step4_desc">
+              Praktijkervaring opdoen in een ontwikkelteam en doorgroeien richting Full-Stack Developer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subpagina 3: Projecten -->
+    <section id="projecten" class="page-view section">
       <h2 data-i18n="projects_title">Projecten</h2>
       <div class="project-grid">
-        
-        <article class="card">
+
+        <!-- Project 1: Portfolio Website -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="status-badge status-live" data-i18n="status_live">In afronding</span>
+            <span class="tech-tag">HTML &bull; CSS &bull; JS</span>
+          </div>
           <h3 data-i18n="project1_title">Portfolio Website</h3>
-          <p data-i18n="project1_desc">Mijn persoonlijke landingspagina, gebouwd met HTML en CSS en gehost via GitHub Pages.</p>
-          <a href="https://github.com/Kumari849/github.io" target="_blank" rel="noopener">Bekijk op GitHub &rarr;</a>
+          <p data-i18n="project1_desc">
+            Mijn persoonlijke landingspagina, gebouwd met HTML en CSS en gehost via GitHub Pages.
+          </p>
+          <a href="https://github.com/Kumari849/github.io" target="_blank" rel="noopener" class="project-link" data-i18n="project_link">
+            Bekijk op GitHub &rarr;
+          </a>
         </article>
 
-        <article class="card">
-          <h3 data-i18n="project2_title">Project 2</h3>
-          <p data-i18n="project2_desc">p2</p>
-          <a href="https://github.com/Kumari849/project-2" target="_blank" rel="noopener">Bekijk op GitHub &rarr;</a>
-        </article>
-
-        <article class="card">
-          <h3 data-i18n="project3_title">Project 3</h3>
-          <p data-i18n="project3_desc">p3</p>
-          <a href="https://github.com/Kumari849/project-3" target="_blank" rel="noopener">Bekijk op GitHub &rarr;</a>
+        <!-- Project 2: Binnenkort -->
+        <article class="project-card project-coming-soon">
+          <div class="project-header">
+            <span class="status-badge status-soon" data-i18n="status_soon">Binnenkort</span>
+            <span class="tech-tag" data-i18n="project2_tech">Nog te starten</span>
+          </div>
+          <h3 data-i18n="project2_title">Volgend project</h3>
+          <p data-i18n="project2_desc">
+            Ik rond eerst deze portfoliopagina volledig af voordat ik aan een volgend project begin.
+          </p>
+          <span class="coming-soon-note" data-i18n="project2_note">Start na afronding portfolio</span>
         </article>
 
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
+    <!-- Subpagina 4: Contact -->
+    <section id="contact" class="page-view card-section">
       <h2 data-i18n="contact_title">Contact</h2>
-      <p data-i18n="contact_text">Wil je samenwerken, mij ondersteunen in mijn ontwikkeling als programmeur of heb je een vraag? Neem gerust contact op:</p>
+      <p data-i18n="contact_text">
+        Wil je samenwerken, mij ondersteunen in mijn ontwikkeling als programmeur of heb je een vraag? Neem gerust contact op:
+      </p>
       <ul class="contact-links">
-        <li><a href="mailto:daphne.anandakumar@outlook.com" class="contact-btn" data-i18n="contact_email_label">daphne.anandakumar@outlook.com</a></li>
-        <li><a href="https://github.com/Kumari849" target="_blank" rel="noopener" class="contact-btn" data-i18n="contact_github">GitHub-profiel</a></li>
-        <li><a href="https://linkedin.com/in/daphne-anandakumar-28285843b/" target="_blank" rel="noopener" class="contact-btn" data-i18n="contact_linkedin">LinkedIn</a></li>
+        <li>
+          <a href="mailto:daphne.anandakumar@outlook.com" class="contact-btn" data-i18n="contact_email_label">
+            E-mail versturen
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Kumari849" target="_blank" rel="noopener" class="contact-btn" data-i18n="contact_github">
+            GitHub-profiel
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/daphne-anandakumar-28285843b/" target="_blank" rel="noopener" class="contact-btn" data-i18n="contact_linkedin">
+            LinkedIn
+          </a>
+        </li>
       </ul>
     </section>
 
   </main>
 
-  <script src="script.js"></script>
-
-
   <footer>
-    <p data-i18n="footer_text">&copy; 2026 Daphne Anandakumar &mdash; Gebouwd met HTML &amp; CSS</p>
+    <p data-i18n="footer_text">&copy; 2026 Daphne Anandakumar &mdash; Gebouwd met HTML, CSS &amp; JS</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
