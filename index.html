@@ -10,6 +10,7 @@
 
   <header class="hero">
     <div class="container">
+      <button id="lang-toggle" type="button" class="lang-btn">EN</button>
       <h1>Portfolio | Daphne Anandakumar | Junior Developer</h1>
       <p class="subtitle">Startend developer met focus op Python, HTML en CSS.</p>
       <a href="#projecten" class="btn">Bekijk mijn projecten</a>
@@ -20,8 +21,8 @@
     
     <!-- Over mij & Vaardigheden -->
     <section id="over-mij" class="section">
-      <h2>Over mij</h2>
-      <p>
+      <h2 data-i18n="about_title">Over mij</h2>
+      <p data-i18n="about_text">
         Ik ben een leergierige programmeur met een basis in Python, HTML en CSS. 
         Ik bouw graag overzichtelijke webpagina's en handige scripts die taken automatiseren.
         Het is mijn ambitie om mijzelf te ontwikkelen tot Full-Stack Developer. 
@@ -33,7 +34,7 @@
         Ik ben opzoek naar volgend traject/traineeship/bootcamp om vervolgens te kunnen starten als Junior Developer.
       </p>
 
-      <h3>Vaardigheden</h3>
+      <h3 data-i18n="skills_title">Vaardigheden</h3>
       <ul class="skills">
         <li>Python</li>
         <li>HTML5</li>
@@ -80,6 +81,9 @@
     </section>
 
   </main>
+
+  <script src="script.js"></script>
+
 
   <footer>
     <p>&copy; 2026 Daphne Anandakumar &mdash; Gebouwd met HTML &amp; CSS</p>
