@@ -1,4 +1,4 @@
-# Portfolio | Daphne Anandakumar
+# Portfolio | Daphne Anandakumar (NL)
 
 Mijn persoonlijke **Junior Developer**-portfolio, opgebouwd als Single Page Application (SPA) met een navigatiebalk, tweetalige ondersteuning (**NL / EN**) en een warme stijl in aardse en saliegroene tinten.
 
@@ -18,7 +18,7 @@ Mijn persoonlijke **Junior Developer**-portfolio, opgebouwd als Single Page Appl
 
 
 
-# Portfolio | Daphne Anandakumar
+# Portfolio | Daphne Anandakumar (EN)
 
 My personal **Junior Developer** portfolio, built as a Single Page Application (SPA) featuring a navigation bar, bilingual support (**NL / EN**), and a warm aesthetic with earthy tones and sage green accents.
 
